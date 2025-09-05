@@ -65,7 +65,7 @@ export default function CurriculoPage() {
                 <DialogClose className="absolute top-2 right-2" />
               </DialogHeader>
 
-              <div className="overflow-auto max-h-[70vh] border p-4 bg-white rounded-md shadow-md">
+              <div className="overflow-auto max-h-[70vh]  p-4 bg-white rounded-md shadow-md">
                 <ResumePreview
                   ref={componentRef}
                   data={data}

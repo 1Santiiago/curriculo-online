@@ -52,7 +52,7 @@ const ResumePreview = forwardRef<HTMLDivElement, ResumePreviewProps>(
       return (
         <div
           ref={ref}
-          className="p-6 border rounded-lg max-w-lg mx-auto bg-white shadow-md space-y-4 font-sans text-gray-800"
+          className="p-6 rounded-lg max-w-lg mx-auto  space-y-4 font-sans text-gray-800"
         >
           <div className="flex justify-between items-center">
             <h1 className="text-2xl font-bold">{data.nome}</h1>
@@ -131,7 +131,7 @@ const ResumePreview = forwardRef<HTMLDivElement, ResumePreviewProps>(
     return (
       <div
         ref={ref}
-        className="p-6 max-w-lg mx-auto bg-white shadow-lg rounded-lg space-y-6 font-sans"
+        className="p-6 max-w-lg mx-auto   rounded-lg space-y-6 font-sans"
       >
         {/* Header */}
         <div className="flex justify-between items-center border-b pb-2">
