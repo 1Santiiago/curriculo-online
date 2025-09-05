@@ -16,6 +16,7 @@ import {
 } from "@/components/ui/dialog";
 import { Linkedin } from "lucide-react";
 import { MessageCircle } from "lucide-react";
+import AdBanner from "@/components/AdBanner";
 
 export default function CurriculoPage() {
   const [data, setData] = useState<ResumeData | null>(null);
@@ -53,6 +54,8 @@ export default function CurriculoPage() {
           setTemplate={setTemplate}
           onSubmit={(formData: ResumeData) => setData(formData)}
         />
+
+        <AdBanner />
 
         {data && (
           <Dialog>
