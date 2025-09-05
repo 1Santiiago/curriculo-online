@@ -45,6 +45,7 @@ export default function CurriculoPage() {
             Preencha os dados e visualize seu currículo em PDF
           </p>
         </div>
+        <AdBanner />
       </header>
 
       {/* CONTEÚDO */}
