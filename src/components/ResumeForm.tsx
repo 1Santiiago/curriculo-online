@@ -207,7 +207,6 @@ export default function ResumeForm({
           />
         </div>
       </div>
-
       <Button type="submit" className="w-full">
         Gerar Currículo
       </Button>
