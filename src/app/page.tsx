@@ -1,5 +1,5 @@
 "use client";
-
+import { ResumeSVG } from "../../public/ResumeSVG";
 import { useState, useRef } from "react";
 import ResumeForm from "@/components/ResumeForm";
 import ResumePreview from "@/components/ResumePreview";
@@ -38,6 +38,7 @@ export default function CurriculoPage() {
       {/* HEADER */}
       <header className="bg-indigo-700 text-white py-6 mb-6">
         <div className="max-w-4xl mx-auto px-4 text-center">
+          <ResumeSVG />
           <h1 className="text-4xl font-bold mb-2">Crie Seu Currículo Online</h1>
           <p className="text-lg">
             Preencha os dados e visualize seu currículo em PDF
