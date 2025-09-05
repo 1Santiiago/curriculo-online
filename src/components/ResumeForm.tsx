@@ -86,6 +86,8 @@ export default function ResumeForm({
             {...register("foto")}
             accept="image/*"
             className="w-100"
+            width={20}
+            height={20}
           />
         </div>
 

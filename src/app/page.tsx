@@ -27,11 +27,37 @@ export default function CurriculoPage() {
     contentRef: componentRef,
     documentTitle: data?.nome || "Curriculo",
     pageStyle: `
-      @media print {
-        body { -webkit-print-color-adjust: exact; }
-        a { color: blue; text-decoration: underline; }
-      }
-    `,
+    @page {
+      size: A4;
+      margin: 20mm;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+    }
+
+    body {
+      -webkit-print-color-adjust: exact !important;
+      font-family: Arial, sans-serif;
+      background: white;
+    }
+
+    .print-container {
+      width: 210mm;   /* largura A4 */
+      min-height: 297mm; /* altura A4 */
+      margin: auto;
+      padding: 20mm;
+      box-sizing: border-box;
+    }
+
+    a {
+      color: blue !important;
+      text-decoration: underline !important;
+    }
+  `,
   });
 
   return (
@@ -49,7 +75,7 @@ export default function CurriculoPage() {
       </header>
 
       {/* CONTEÚDO */}
-      <main className="flex-1 max-w-4xl mx-auto px-4 grid gap-6 md:grid-cols-1 lg:grid-cols-2">
+      <main className="flex-1 max-w-4xl mx-auto  px-4 grid gap-6 md:grid-cols-1 lg:grid-cols-2 w-full ">
         <ResumeForm
           template={template}
           setTemplate={setTemplate}
