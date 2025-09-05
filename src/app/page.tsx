@@ -49,7 +49,7 @@ export default function CurriculoPage() {
       </header>
 
       {/* CONTEÚDO */}
-      <main className="flex-1 max-w-4xl mx-auto px-4 grid md:grid-cols-1 gap-6">
+      <main className="flex-1 max-w-4xl mx-auto px-4 grid gap-6 md:grid-cols-1 lg:grid-cols-2">
         <ResumeForm
           template={template}
           setTemplate={setTemplate}
